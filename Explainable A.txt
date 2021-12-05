@@ -47,7 +47,7 @@ REGION = 'us-central1'
 
 
 # ---- TODO ---------
-!gcloud ai-platform models create $MODEL_NAME --regions $REGION
+!gcloud ai-platform models create 'complete_model' --regions $REGION
 
 
 
@@ -55,10 +55,10 @@ REGION = 'us-central1'
 
 # ---- TODO ------
 !gcloud ai-platform versions create $VERSION_NAME \
---model=$MODEL_NAME \
+--model='complete_model' \
 --framework='TENSORFLOW' \
 --runtime-version=2.1 \
---origin=$MODEL_BUCKET/saved_model/my_model \
+--origin=$MODEL_BUCKET/saved_complete_model/ \
 --staging-bucket=$MODEL_BUCKET \
 --python-version=3.7
 
@@ -71,7 +71,7 @@ Create your second AI Platform model: limited_model
 
 
 # ---- TODO ---------
-!gcloud ai-platform models create $LIM_MODEL_NAME --regions $REGION
+!gcloud ai-platform models create 'limited_model' --regions $REGION
 
 
 
@@ -80,10 +80,10 @@ Create your second AI Platform model: limited_model
 
 # ---- TODO ------
 !gcloud ai-platform versions create $VERSION_NAME \
---model=$LIM_MODEL_NAME \
+--model='limited_model' \
 --framework='TENSORFLOW' \
 --runtime-version=2.1 \
---origin=$MODEL_BUCKET/saved_limited_model/my_limited_model \
+--origin=$MODEL_BUCKET/saved_limited_model/ \
 --staging-bucket=$MODEL_BUCKET \
 --python-version=3.7
 
