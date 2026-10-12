@@ -1,5 +1,7 @@
 # Explore Machine Learning Models with Explainable AI: Challenge Lab (GSP324)
 
+> 📦 **Archived.** This lab is now maintained in **[google-cloud-skills-boost-notes](https://github.com/codewithgarry/google-cloud-skills-boost-notes/tree/main/ml-ai/gsp324-explore-ml-models-with-explainable-ai)** with my other Google Cloud lab notes. This repository is read-only.
+
 ![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?logo=googlecloud&logoColor=white)
 ![Lab](https://img.shields.io/badge/Lab-GSP324-34A853)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white)
